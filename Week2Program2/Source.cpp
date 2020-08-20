@@ -19,12 +19,12 @@ int main()
 			{
 				a[j] %= 10;
 				ch = 1;
-				if (j > max)max = j;
+				if (j+1 > max)max = j+1;
 			}
 			else if (j>max)break;
 		}
 	}
-	for (int i = 0; i <= 1000; i++)
+	for (int i = 0; i <= max; i++)
 	{
 		sum += a[i];
 	}
